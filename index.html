@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="main.css">
+    <title>Number Tricks Enhanced</title>
+    <script>
+        var guess = prompt("Enter a whole number!");
+        var guess = prompt("Must be a whole number!");
+        var guessNumber = parseInt(guess);
+ 
+     if (isNaN(guess)) {
+        alert("Not a number!");
+        window.location.reload(false)
+     }
+
+    var tempNumber = guessNumber;
+    var origNumber = guessNumber;
+    guessNumber += 9;
+    guessNumber *= 2;
+    guessNumber -= 4;
+    guessNumber /= 2;
+    guessNumber -= origNumber;
+
+     alert("Your final number is " + guessNumber + "!" ); 
+
+     </script>
+</head>
+<body>
+    <main>
+     <ul>
+         <li><b>Choose any number and add 9 to it.</b></li>
+         <li><b>Multiply this number by 2.</b></li>
+         <li><b>Subtract 4.</b></li>
+         <li><b>Divide the remainder by 2.</b></li>
+         <li><b>Subtract the number you first picked.</b></li>
+    </ul>
+
+        <h3>Your final number is 7!</h3>
+
+        <h2><a href="index.html">Try Again?</a></h2>
+
+        <h1>Thanks for using the Number Trick application!</h1>
+
+    <div id="container">
+             <img src="math.png" alt="MATH!!" class="center">
+        </div>
+    </main>
+</body>
+</html> 
